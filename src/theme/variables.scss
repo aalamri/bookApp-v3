@@ -9,7 +9,7 @@ $font-path: "../assets/fonts";
 // The app direction is used to include
 // rtl styles in your app. For more info, please see:
 // http://ionicframework.com/docs/theming/rtl-support/
-$app-direction: ltr;
+$app-direction: multi; // Both RTL and LTR
 
 
 @import "ionic.globals";
@@ -34,14 +34,16 @@ $app-direction: ltr;
 // The "primary" color is the only required color in the map.
 
 $colors: (
-  primary:    #488aff,
-  secondary:  #32db64,
-  danger:     #f53d3d,
-  light:      #f4f4f4,
-  dark:       #222
-);
-
-
+primary:    #E69900,
+secondary:  #FFBF00,
+danger:     #d0021b,
+canceled:     #d0021b,
+light:      #f4f4f4,
+dark:       #4a4a4a,
+warning:    #e67e22,
+price:      #54a33b,
+ );
+ 
 // App iOS Variables
 // --------------------------------------------------
 // iOS only Sass variables can go here

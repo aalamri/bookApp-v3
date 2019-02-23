@@ -1,0 +1,79 @@
+@font-face {
+  font-family: 'fbfont';
+  src:  url('fonts/fbfont.eot?cyf2ep');
+  src:  url('fonts/fbfont.eot?cyf2ep#iefix') format('embedded-opentype'),
+    url('fonts/fbfont.ttf?cyf2ep') format('truetype'),
+    url('fonts/fbfont.woff?cyf2ep') format('woff'),
+    url('fonts/fbfont.svg?cyf2ep#fbfont') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="ci-"], [class*=" ci-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'fbfont' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ci-mail-envelope-closed:before {
+  content: "\e900";
+}
+.ci-minus:before {
+  content: "\e90f";
+}
+.ci-plus:before {
+  content: "\e90e";
+}
+.ci-user-plus:before {
+  content: "\e902";
+}
+.ci-user:before {
+  content: "\e90d";
+}
+.ci-mail:before {
+  content: "\e901";
+}
+.ci-food:before {
+  content: "\e903";
+}
+.ci-shopping-cart:before {
+  content: "\e904";
+}
+.ci-food-1:before {
+  content: "\e905";
+}
+.ci-sign-in:before {
+  content: "\e906";
+  color: #4a4a4a;
+}
+.ci-history:before {
+  content: "\e907";
+  color: #4a4a4a;
+}
+.ci-Check:before {
+  content: "\e908";
+}
+.ci-construction:before {
+  content: "\e909";
+  color: #4a4a4a;
+}
+.ci-earth-globe:before {
+  content: "\e90a";
+  color: #4a4a4a;
+}
+.ci-idea:before {
+  content: "\e90b";
+  color: #4a4a4a;
+}
+.ci-Trash:before {
+  content: "\e90c";
+}

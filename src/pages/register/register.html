@@ -1,0 +1,94 @@
+<!--
+  Generated template for the RegisterPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<!--
+  Generated template for the RegisterPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+<ion-header mode="ios" no-border>
+  <ion-navbar mode="ios" no-border>
+    <ion-buttons start>
+      <button ion-button menuToggle no-margin no-padding>
+        <ion-icon name="menu-custom">
+          <span class="menu-icon menu-icon-random"><span class="bars"><span class="bar1"></span><span
+            class="bar2"></span><span class="bar3"></span></span></span>
+        </ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title text-center>Register</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content class='default-bg no-padding margin-horizontal'>
+  <div class="logo-internal">
+    <!-- <img src="./assets/app/logo.svg"> -->
+  </div>
+  <div class="ion-text" padding>
+    <ion-item>
+      <ion-label color="dark" floating>Name<i class="star">*</i></ion-label>
+      <ion-input [(ngModel)]="name" required></ion-input>
+    </ion-item>
+    <ion-item *ngIf="name.length>0" class="no-border-bottom">
+      <p ion-text padding-horizontal color="danger"></p>
+    </ion-item>
+    <ion-item>
+      <ion-label color="dark" floating>Email<i class="star">*</i></ion-label>
+      <ion-input [(ngModel)]="name" required></ion-input>
+    </ion-item>
+    <ion-item *ngIf="email.length>0" class="no-border-bottom">
+      <p ion-text padding-horizontal color="danger"></p>
+    </ion-item>
+    <ion-item>
+      <ion-label color="dark" floating>Password<i class="star">*</i></ion-label>
+      <ion-input [(ngModel)]="password" type="password" required></ion-input>
+    </ion-item>
+    <ion-item *ngIf="password.length>0" class="no-border-bottom">
+      <p ion-text padding-horizontal color="danger"></p>
+    </ion-item>
+  </div>
+  <ion-grid>
+
+    <ion-row justify-content-center>
+      <ion-col col-8>
+        <button ion-button block mode="ios"  (click)="myRegister()"></button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+
+<!-- 
+<ion-header>
+  <ion-navbar>
+    <ion-title>Register</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item>
+      <ion-label floating>name</ion-label>
+      <ion-input type="text" [(ngModel)]="name"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Email</ion-label>
+      <ion-input type="email" [(ngModel)]="email"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Password</ion-label>
+      <ion-input type="password" [(ngModel)]="password"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <div padding>
+    <button ion-button color="secondary" (click)="myRegister()">
+      Register
+    </button>
+  </div>
+</ion-content> -->
