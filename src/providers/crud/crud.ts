@@ -19,15 +19,15 @@ export class CrudProvider {
 
   getPosts() {
     return new Promise((resolve, reject) => {
-      this.storage.get("token").then(value => {
-        let headers = new Headers();
-        headers.append("Content-Type", "application/json");
-        headers.append("Authorization", "Bearer " + value);
+      // this.storage.get("token").then(value => {
+      //   let headers = new Headers();
+      //   headers.append("Content-Type", "application/json");
+      //   headers.append("Authorization", "Bearer " + value);
 
-        console.log("value: " + value);
+      //   console.log("value: " + value);
 
         this.http
-          .get(apiKey + "api/books", { headers: headers })
+          .get(apiKey + "api/books")
           .map(res => res.json())
           .subscribe(
             data => {
@@ -38,7 +38,6 @@ export class CrudProvider {
             }
           );
       });
-    });
   }
 
   insertPosts(postInfo) {
